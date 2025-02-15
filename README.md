@@ -95,7 +95,7 @@ python3 app.py --host=127.0.0.1 --port=5000 # Or host --host=0.0.0.0 f you want 
 ```
 Then open your browser and go to `http://127.0.0.1:5000/`, now you can detect fake images online!.
 
-## 👨‍💻 or the Developers: 🏋️‍♂️ Training a Custom Model 
+## 👨‍💻 For the Developers: 🏋️‍♂️ Training a Custom Model 
 
 If you prefer to retrain the model, instead of using the pretrained model I provide, follow the steps in the notebook for doing so (this involves creating a custom datset and training and saving a custom model); I hope you find it very useful.
 
