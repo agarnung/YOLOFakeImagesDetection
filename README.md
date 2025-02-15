@@ -2,6 +2,8 @@
 
 This project uses the YOLO model to detect manipulations in images, such as Photoshop edits, cropping, or deepfakes.
 
+![web_image](./assets/web_image.png)
+
 ## 🤖🔍 What is the goal of our model? 
 🐱🚫🐇  _Que no te den gato por liebre_ – making sure you're not being tricked! 
 
