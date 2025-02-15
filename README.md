@@ -1,6 +1,6 @@
 # YOLOFakeImagesDetection
 
-This project uses the YOLO model to detect manipulations in images, such as Photoshop edits, cropping, or deepfakes.
+This project uses YOLO to detect manipulations in images, such as Photoshop edits, cropping, or deepfakes.
 
 ![web_image](./assets/web_image.png)
 
