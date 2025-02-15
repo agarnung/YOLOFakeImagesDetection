@@ -8,5 +8,6 @@
 .yolofid
 datasets/*
 models/*
+!models/my_model/weights/best.pt
 output/*
 runs/*
