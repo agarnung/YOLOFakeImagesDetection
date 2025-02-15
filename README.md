@@ -70,12 +70,12 @@ Even more specifically, we ignore the original image from which the "fake" regio
 # 🚀 Using the Application 
 
 You just need to clone the project:
-```
+```bash
 git clone https://github.com/agarnung/YOLOFakeImagesDetection.git && cd YOLOFakeImagesDetection
 ```
 
 and set it up using the following command:
-```
+```bash
 source setup.sh
 ```
 
@@ -84,16 +84,18 @@ Launch the application using the following command:
 source launch_app.py
 ```
 
+This will open the first available browser (firefox, chrome, chromium...) on the system with the web app.
+
 Or, if you prefer to do it manually (stop any program that uses the default port 5000, if any, or start the server on a different port):
 ```bash
 python3 app.py 
 python3 app.py --host=127.0.0.1 --port=5000 # Or host --host=0.0.0.0 f you want it to be accessible to the entire local network
 ```
-Then open your browser and go to `http://127.0.0.1:5000/`.
+Then open your browser and go to `http://127.0.0.1:5000/`, now you can detect fake images online!.
 
 ## 👨‍💻 or the Developers: 🏋️‍♂️ Training a Custom Model 
 
-If you prefer to retrain the model, instead of using the pretrained model I provide, follow the steps in the notebook for doing so; I hope you find it very useful.
+If you prefer to retrain the model, instead of using the pretrained model I provide, follow the steps in the notebook for doing so (this involves creating a custom datset and training and saving a custom model); I hope you find it very useful.
 
 Specify your configuration, both for training and testing (though testing is done from the app, there is a section in the notebook for CLI testing), in the `config.yaml` file. For both training and testing, you need to (un)comment the respective sections of this file.
 
@@ -209,3 +211,5 @@ _Enjoy!_
 - Separate the configuration into config_train.yaml, config_val.yaml, and config_test.yaml, with their respective data_x.yaml files, and create scripts so that there is no need to launch the notebook, and perhaps also for dataset creation.
 
 - Allow video processing and playback from the web.
+
+- Simplify better the requirements.txt in requirements_simple.txt to not include low-level dependencies or pack all in a Docker 

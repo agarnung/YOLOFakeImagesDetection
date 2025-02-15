@@ -41,9 +41,8 @@ expecttest==0.3.0
 fastcluster==1.2.6
 fastparquet==2024.11.0
 fbscribelogger==0.1.7
-flatbuffers==1.12.1_git20200711.33e2d80_dfsg1_0.6
+flatbuffers==1.12.1
 flint==0.0.1
-foo==.1
 Foundation==0.1.0a0.dev1
 freetype_py==2.5.1
 gdown==5.2.0

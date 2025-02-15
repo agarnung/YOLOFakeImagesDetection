@@ -32,8 +32,19 @@ for i in {1..5}; do
     sleep 1
 done
 
-echo "🌍 Opening Firefox at http://127.0.0.1:$PORT/"
-firefox "http://127.0.0.1:$PORT/" &
+# Open the web app in the default browser
+echo "🌍 Opening the web application in the default browser..."
+
+if [[ "$OSTYPE" == "linux-gnu"* || "$OSTYPE" == "darwin"* ]]; then
+    # For Linux or macOS, use the system's default browser
+    xdg-open "http://127.0.0.1:$PORT" || open "http://127.0.0.1:$PORT" # xdg-open (Linux), open (macOS)
+elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+    # For Windows, use start to open the default browser
+    start "http://127.0.0.1:$PORT" # For Windows
+else
+    echo "❌ Unsupported operating system for automatic browser opening."
+    exit 1
+fi
 
 # Keep the script running until Flask is closed
 wait

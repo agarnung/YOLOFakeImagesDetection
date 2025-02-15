@@ -27,13 +27,13 @@ fi
 echo "Running: $ACTIVATE_CMD"
 eval "$ACTIVATE_CMD"
 
-# Install dependencies if requirements.txt exists
-if [ -f "requirements.txt" ]; then
-    echo "Installing dependencies from requirements.txt..."
+# Install dependencies if requirements_simple.txt exists
+if [ -f "requirements_simple.txt" ]; then
+    echo "Installing dependencies from requirements_simple.txt..."
     pip install --upgrade pip
-    pip install -r requirements.txt
+    pip install -r requirements_simple.txt
 else
-    echo "No requirements.txt file found, run pyreqs if needed."
+    echo "No requirements_simple.txt file found, run pyreqs if needed."
 fi
 
 echo "Environment setup and activated."
