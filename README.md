@@ -84,7 +84,7 @@ Launch the application using the following command:
 source launch_app.py
 ```
 
-This will open the first available browser (firefox, chrome, chromium...) on the system with the web app.
+This will open the default browser on the system with the web app.
 
 Or, if you prefer to do it manually (stop any program that uses the default port 5000, if any, or start the server on a different port):
 ```bash
