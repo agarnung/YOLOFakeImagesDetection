@@ -214,4 +214,6 @@ _Enjoy!_
 
 - Allow video processing and playback from the web.
 
-- Simplify better the requirements.txt in requirements_simple.txt to not include low-level dependencies or pack all in a Docker 
+- Simplify better the requirements.txt in requirements_simple.txt to not include low-level dependencies or pack all in a Docker.
+
+- Create a GIF for the README.
