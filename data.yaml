@@ -1,0 +1,7 @@
+# Where our formatted dataset is located (absolute paths for convenience)
+train: /opt/YOLOFakeImagesDetection/datasets/custom_dataset/images/train  
+val: /opt/YOLOFakeImagesDetection/datasets/custom_dataset/images/val      
+test: /opt/YOLOFakeImagesDetection/datasets/custom_dataset/images/test
+
+nc: 1                  # Number of classes
+names: ['manipulated'] # Class names

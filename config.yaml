@@ -1,0 +1,29 @@
+#############################################################
+# Comment the respective contents, whether to train or test #
+#############################################################
+
+###########
+## Train ##
+###########
+# task: segment                      # Define the task type (segmentation)
+# mode: train                        # Operation mode (training)
+# model: yolov8n-seg.pt              # Base model to be used for training (pre-trained or custom)
+# data: ./data.yaml                  # Path to the data configuration file (data.yaml) with image and class paths
+# epochs: 50                         # Number of epochs for training (how many times the model will train on the dataset)
+# imgsz: 640                         # Input image size (resolution of images the model will process)
+# batch_size: 32                     # Number of images processed per batch during training
+# project: ./models                  # Path where the project results will be stored (trained models and other output files)
+# name: my_model                     # Project name (the trained model will be saved with this name)
+
+##########
+## Test ##
+##########
+task: segment                                 # Specify the task, which is still segmentation
+mode: predict                                 # Change the mode to "predict" for inference
+model: ./models/my_model/weights/best.pt      # Path to the trained model (usually saved as 'best.pt' at the end of training)
+data: ./data.yaml                             # data.yaml file with image and class paths
+imgsz: 640                                    # Input image size (must match the training size)
+source: ./datasets/custom_dataset/images/test # Path to the test image directory (or a specific file)
+save: True                                    # Optional, to save prediction results (images with predictions)
+project: ./output                             # Base directory where test results will be saved
+name: test                                    # Name of the subdirectory where the test results will be stored

@@ -1,0 +1,12 @@
+# Object file
+*.o
+
+# Python
+*.pyc
+
+# Ultralytics
+.yolofid
+datasets/*
+models/*
+output/*
+runs/*

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Fake Image Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload an Image for YOLO Fake Detection</h1>
+    
+    <div class="input-container">
+        <input type="file" id="imageInput">
+        <button onclick="uploadImage()">Analyze</button>
+    </div>
+
+    <div class="image-container">
+        <div class="image-box">
+            <h3 class="image-title">Original Image</h3>
+            <img id="originalImage" src=""/>
+        </div>
+
+        <div class="image-box">
+            <h3 class="image-title">Analyzed Image</h3>
+            <img id="resultImage" src="">
+        </div>
+    </div>
+
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
