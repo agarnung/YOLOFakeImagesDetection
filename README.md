@@ -4,7 +4,7 @@ This project uses YOLO to detect manipulations in images, such as Photoshop edit
 
 ![web_image](./assets/web_image.png)
 
-![yifd](./assets/yifd.gif)
+![yfid](./assets/yfid.gif)
 
 ## 🤖🔍 What is the goal of our model? 
 🐱🚫🐇  _Que no te den gato por liebre_ – making sure you're not being tricked! 
